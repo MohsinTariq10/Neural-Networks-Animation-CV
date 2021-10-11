@@ -8,12 +8,12 @@ layers = 2
 neurons_layer1 = 4
 neurons_layer2 = 4
 
-tech_first = ["Python", "Javascript", "Java", "ML"]
-tech_second = ["Tensorflow", "Keras", "React Native", "AI"]
+tech_first = ["Cloud", "ML/DL", "Javascript", "Python"]
+tech_second = ["Tensorflow", "Keras", "React Native", "AWS | Azure"]
 tech_third = ["Mohsin Tariq"]
 
 pensize(2)
-speed(500)
+speed(20)
 
 Screen().bgcolor("black")
 
@@ -53,6 +53,8 @@ penup()
 
 color("White")
 pensize(1)
+
+speed(10)
 connections(layer1, layer2_in)
 connections(layer2_out, layer3_in)
 
