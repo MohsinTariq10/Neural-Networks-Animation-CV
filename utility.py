@@ -15,7 +15,7 @@ def draw_layer(num=3, scale = 1):
 
 def draw_neuron(scale= 2):
     position = pos()
-    color("red")
+    color("cyan", "Black")
     begin_fill()
     circle(25*scale)
     end_fill()
@@ -28,3 +28,14 @@ def connections(layer_in, layer_out):
             pendown()
             goto(layer_out[j])
             penup()
+
+def labels(tech, layer):
+    count = 0
+    for i in tech:
+        (x, y) = layer[count]
+        goto(x-25, y+30)
+        pendown()
+        color("yellow")
+        write(i, False, 'center', ('Arial', 12, 'bold'))
+        count = count + 1
+        penup()
