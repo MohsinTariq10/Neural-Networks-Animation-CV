@@ -36,6 +36,6 @@ def labels(tech, layer):
         goto(x-25, y+30)
         pendown()
         color("yellow")
-        write(i, False, 'center', ('Arial', 12, 'bold'))
+        write(i, False, 'center', ('Arial', 12, 'normal'))
         count = count + 1
         penup()

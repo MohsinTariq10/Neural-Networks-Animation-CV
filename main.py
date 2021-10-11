@@ -12,7 +12,7 @@ tech_first = ["Python", "Javascript", "Java", "ML"]
 tech_second = ["Tensorflow", "Keras", "React Native", "AI"]
 tech_third = ["Mohsin Tariq"]
 
-
+pensize(2)
 speed(500)
 
 Screen().bgcolor("black")
@@ -52,6 +52,7 @@ layer3_in = [(layer3_out[0]-50, layer3_out[1])]
 penup()
 
 color("White")
+pensize(1)
 connections(layer1, layer2_in)
 connections(layer2_out, layer3_in)
 
